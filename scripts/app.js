@@ -5,5 +5,13 @@ angular.module('creditCard',[])
   function config(){
     console.log('angular mf')
     var vm = this;
-    vm.newton = "delicious. seriously though, I cannot control myself around the newton contained in fig";
+    vm.creditCard = {
+      number: 5500000000000000,
+      mm: '',
+      yyyy: '',
+      cvc: ''
+    };
+    vm.submitCard = function(data){
+      console.log(data)
+    }
   }

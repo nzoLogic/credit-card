@@ -8,7 +8,13 @@
   </head>
   <body>
     <div ng-controller="config as fig">
-      {{fig.newton}}
+      <form ng-model="fig.creditCard">
+        <input ng-model="fig.creditCard.number">
+        <input ng-model="fig.creditCard.mm" placeholder="mm">
+        <input ng-model="fig.creditCard.yyyy" placeholder="yyyy">
+        <input ng-model="fig.creditCard.cvc" placeholder="cvc">
+        <input type="submit" ng-submit="fig.submitCard(fig.creditCard)">
+      </form>
     </div>
   </body>
 </html>
