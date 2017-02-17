@@ -1,4 +1,4 @@
-console.log('app.js online');
+
 angular.module('creditCard',[])
   .controller('config', config);
 
